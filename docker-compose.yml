@@ -1,11 +1,13 @@
 version: "3.7"
 services:
   app:
+    image: louislam/uptime-kuma
     container_name: uptime-kuma
-    ports:
-      - 3009:3001
     volumes:
       - ./data:/app/data
-    image: louislam/uptime-kuma
+    ports:
+      - 3009:3001
+    tty: true
+    stdin_open: true
 
     restart: unless-stopped
