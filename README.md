@@ -8,9 +8,9 @@ Pull the image from docker hub
 
  `docker pull louislam/uptime-kuma`
 
-Run docker compose
+Run docker compose (`-d` to run in detached mode)
 
- `docker compose up`
+ `docker compose up -d`
 
 Navigate to `http://localhost:3009/` in a browser to configure uptime-kuma
 ![alt image](utkuma.png)
